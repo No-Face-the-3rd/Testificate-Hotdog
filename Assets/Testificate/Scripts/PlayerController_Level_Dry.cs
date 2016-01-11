@@ -51,7 +51,6 @@ public class PlayerController_Level_Dry : MonoBehaviour {
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, forward * (15.0f + duckModifier)));
 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, minX, maxX), transform.position.y, transform.position.z);
-        Debug.Log(Camera.main.WorldToScreenPoint(transform.position));
     }
 
     void OnCollisionEnter(Collision collision)
